@@ -13,7 +13,7 @@ auto main() -> int {
   ull test_count = 0;
   cin >> test_count;
 
-  while (--test_count != 0U) {
+  while (test_count-- != 0U) {
     solve();
   }
 }
