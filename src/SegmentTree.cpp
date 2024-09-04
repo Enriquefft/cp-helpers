@@ -23,6 +23,7 @@ concept ValueInputIterator =
     std::constructible_from<value_type,
                             typename std::iterator_traits<InputIt>::value_type>;
 
+
 template <typename T, typename Stored, BinaryOperation<Stored> Op>
 class SegmentTree {
 public:

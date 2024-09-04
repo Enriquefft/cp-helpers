@@ -18,7 +18,11 @@ Diagnostics:
         -google-objc*,
       ]
     Remove: [
-        # modernize-use-trailing-return-type,
+        modernize-use-trailing-return-type,
+        google-build-using-namespace,
+        readability-isolate-declaration,
+        readability-identifier-length,
+        performance-avoid-endl, # maybe? idk
 
         # Redundant aliases
         hicpp-avoid-c-arrays,
@@ -35,7 +39,7 @@ Diagnostics:
       readability-identifier-naming.MethodCase: lower_case
       readability-identifier-naming.ParameterCase: lower_case
       readability-identifier-naming.PrivateMemberPrefix: m_
-  UnusedIncludes: Strict
+  UnusedIncludes: None
 
 ---
 # Fragment specific to C++ source files

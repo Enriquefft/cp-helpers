@@ -14,25 +14,21 @@
 
         stdenv = pkgs.llvmPackages_latest.stdenv;
 
-        packages = with pkgs;
-          [
-            coreutils
-            clang-tools
-            cmake
-            cppcheck
-            doxygen
-            gtest
-            lcov
-            vcpkg
-            vcpkg-tool
-            gdb
+        packages = with pkgs; [
+          coreutils
+          clang-tools
+          cmake
+          cppcheck
+          doxygen
+          gtest
+          lcov
+          vcpkg
+          vcpkg-tool
+          gdb
 
-            python3
+          python3
 
-          ] ++ (with pkgs.python3Packages;
-            [
-
-            ]);
+        ];
       };
     };
 
