@@ -1,8 +1,24 @@
 #include <cstdint>
+#include <concepts>
 using ll = intmax_t;
 using ull = uintmax_t;
 
 constexpr ll MODULO = 1000000007;
+
+template <std::integral T>
+constexpr auto bin_exp(T expo, T base ) -> T {
+
+  T res = 1;
+
+  while (expo > 0) {
+    if (expo & 1) {
+      res = (res * base) ;
+    }
+    base = (base * base) ;
+    expo >>= 1LL;
+  }
+  return res;
+}
 
 // exponent is very large
 // modulo is prime (1e9 + 7)

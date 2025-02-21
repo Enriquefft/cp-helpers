@@ -24,6 +24,8 @@ Diagnostics:
         readability-identifier-length,
         performance-avoid-endl, # maybe? idk
 
+        cert-dcl21-cpp, # deprecated
+
         # Redundant aliases
         hicpp-avoid-c-arrays,
         cppcoreguidelines-avoid-c-arrays,

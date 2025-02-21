@@ -1,8 +1,11 @@
 #include <cstdint>
 #include <iostream>
+#include <vector>
 
 using ll = intmax_t;
 using ull = uintmax_t;
+
+template <typename T> using matrix = std::vector<std::vector<T>>;
 
 using namespace std;
 
